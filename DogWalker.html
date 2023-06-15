@@ -35,30 +35,25 @@
     
 
     <div class="retangulo">
-        <h2 class="primeira">Pacote Semanal - Dog Walker</h2>
+        <h2 class="pct">Pacote Semanal - Dog Walker</h2>
+        <p class="porsemana">Por semana:</p>
 
         <div class="botao1"><p>Pequeno</p><input type="checkbox"></div>
         <div class="botao2"><p>Médio</p><input checked="checked" type="checkbox"></div>
         <div class="botao3"><p>Grande</p><input type="checkbox"></div>
 
-        <input name="radio" type="radio"><h2 class="preco1">1X......................................................................R$30.........................R$45........................R$60</h2>
-        <h2 class="preco2">2X.......................................................................R$60........................R$90........................R$120</h2>
-        <h2 class="preco3">3X.......................................................................R$90.......................R$135.......................R$180</h2>
+        <input class="selecionar1" type="radio"><h2 class="preco1">1X......................................................................R$30.........................R$45........................R$60</h2>
+        <input class="selecionar2" type="radio"><h2 class="preco2">2X.......................................................................R$60........................R$90........................R$120</h2>
+        <input class="selecionar3" type="radio"><h2 class="preco3">3X.......................................................................R$90.......................R$135.......................R$180</h2>
 
-          <p class="descricao">Aulas Presenciais Semanais
-          <p class="descricao">
-          Adestrador Samuel Correia
-          <p class="descricao">
-          Região ABC - São Paulo
-          </p>
-            <h2 class="contato"><img src="../Amicãozão/whatsapp.png" width="40px"> (11)93451-9012</h2>
+        <button>Adicionar ao Carrinho</button>
       </div>
 
 
 
 
 
-    <footer>
+    <!-- <footer>
       <div>
       <h1>Sobre nós</h1>
       <p>Iniciaram nossa empresa em 2023 em uma loja física 
@@ -77,7 +72,7 @@
 
       <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3654.2743067634183!2d-46.521337725690984!3d-23.666146465448207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4279205f949b%3A0xb4f0ae2a39069537!2sAv.%20Santos%20Dumont%2C%20300%20-%20Vila%20Vilma%2C%20Santo%20Andr%C3%A9%20-%20SP%2C%2009015-320!5e0!3m2!1spt-BR!2sbr!4v1685716494765!5m2!1spt-BR!2sbr" width="500" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
-  </footer>
+  </footer> -->
 </body>
 <!-- CSS do Header e Rodapé -->
 <div>
@@ -167,7 +162,7 @@
       .retangulo{
         position: absolute;
         width: 1180px;
-        height: 370px;
+        height: 500px;
         left: 40px;
         top: 700px;
         background: #FFFFFF;
@@ -175,6 +170,16 @@
         border-radius: 15px;
         text-align: center;
         align-items: center;
+        }
+
+        .pct{
+            color: #EBCA46;
+        }
+
+        .porsemana{
+            position: relative;
+            left: -200px;
+            top: 37px;
         }
 
         .botao1{
@@ -195,15 +200,65 @@
         }
         .preco1{
             position: relative;
-            top: -145px
+            top: -145px;
+            color: #2B4F6B;
         }
         .preco2{
             position: relative;
-            top: -145px
+            top: -145px;
+            color: #2B4F6B;
         }
         .preco3{
             position: relative;
-            top: -145px
+            top: -145px;
+            color: #2B4F6B;
+        }
+
+
+        .selecionar1{
+            position: relative;
+            left: -470px;
+            top: -100px;
+        }
+        .selecionar2{
+            position: relative;
+            left: -470px;
+            top: -100px;
+        }
+        .selecionar3{
+            position: relative;
+            left: -470px;
+            top: -100px;
+        }
+
+        button {
+        padding: 1.3em 3em;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-weight: 500;
+        color: #000;
+        background-color: #fff;
+        border: none;
+        border-radius: 45px;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+        outline: none;
+        top: -130px;
+        position: relative;
+        left: 0px;
+        }
+
+        button:hover {
+        background-color: #EBCA46;
+        box-shadow: 0px 15px 20px rgba(187, 190, 3, 0.4);
+        color: #fff;
+        transform: translateY(-7px);
+        }
+
+        button:active {
+        transform: translateY(-1px);
         }
 </style>
 </div>
